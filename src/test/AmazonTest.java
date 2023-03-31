@@ -41,11 +41,11 @@ public class AmazonTest {
 				System.out.println("mobile : " + mobilename.get(i).getText());
 				System.out.println("Price : "+correncysymbol.get(i).getText() + " " +mobileprice.get(i).getText());
 		}
-		TakesScreenshot tsObj = (TakesScreenshot) driver;
-		File fileObj = tsObj.getScreenshotAs(OutputType.FILE);
-		File screenshotObj = new File("mobilesSearch.png");
+		TakesScreenshot ssobj = (TakesScreenshot) driver;
+		File fileObj = ssobj.getScreenshotAs(OutputType.FILE);
+		File screenshotObject = new File("amazonss.png");
 		
-		FileUtils.copyFile(fileObj,screenshotObj);
+		FileUtils.copyFile(fileObj,screenshotObject);
 		driver.close();
 		
 		
